@@ -71,3 +71,21 @@
 	\end{itemize}
 	\vspace{-23pt}
 }
+
+% Use this environment to display content in tabular format
+\newenvironment{table_display}{
+	\begin{tabular}{p{4.5cm} p{13cm}}
+		}{
+	\end{tabular}
+}
+
+% Use this environment to keep a one line heading of project/por
+% args are heading, council/organizer, duration
+\newenvironment{onelineheading}[3]{
+	\textbf{#1} $|$ \textit{#2} \hfill {\sl \small \textit #3}
+	\vspace{-4pt}
+	\begin{itemize}[itemsep = -0.4 mm, leftmargin= *]
+		}{
+	\end{itemize}
+	\vspace{-15pt}
+}
